@@ -1,0 +1,23 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .: {}
+
+  package/queue:
+    dependencies:
+      link-q:
+        specifier: ^1.0.0
+        version: 1.0.0
+
+  packages/01-queue: {}
+
+packages:
+
+  /link-q@1.0.0:
+    resolution: {integrity: sha512-WUnMHwAVGWaF92m+DpuLjyI5GdHuYQ6/mPmuM3FxvvOOcEKgsY9IuTM4rKRaB0SIerPEdMUgoAD77kiEUQYVsQ==}
+    dev: false
