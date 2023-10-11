@@ -4,4 +4,13 @@
 
 ### 1. queue
 先进先出单项链表，支持压栈、出栈、迭代和获取长度。
-原项目为：`yocto-queue`。
+
+原项目：`yocto-queue`。
+
+## 2. p-limit
+控制并发，在原基础上添加了取消未完成任务`clearPending()`。
+
+原项目： `p-limit`
+
+## 3. p-locate
+异步版的`Array#find`

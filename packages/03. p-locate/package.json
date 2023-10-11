@@ -1,0 +1,16 @@
+{
+  "name": "p-locate",
+  "version": "1.0.0",
+  "description": "",
+  "exports": "./index.ts",
+  "scripts": {
+    "test": "tsx examples/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "helper": "workspace:^",
+    "p-limit": "^4.0.0"
+  }
+}
