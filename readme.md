@@ -13,4 +13,6 @@
 原项目： `p-limit`
 
 ## 3. p-locate
-异步版的`Array#find`
+异步版的`Array#find`。
+
+原项目：`p-locate`
