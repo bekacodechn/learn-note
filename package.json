@@ -6,5 +6,12 @@
   "scripts": {},
   "keywords": [],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "delay": "^6.0.0",
+    "helper": "workspace:^"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.4"
+  }
 }
