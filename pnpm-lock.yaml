@@ -24,6 +24,21 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0
 
+  packages/03. p-locate:
+    dependencies:
+      helper:
+        specifier: workspace:^
+        version: link:../helper
+      p-limit:
+        specifier: ^4.0.0
+        version: 4.0.0
+
+  packages/delay:
+    dependencies:
+      helper:
+        specifier: workspace:^
+        version: link:../helper
+
   packages/helper: {}
 
   packages/l:

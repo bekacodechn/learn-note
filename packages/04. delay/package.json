@@ -1,0 +1,14 @@
+{
+  "name": "delay",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "tsc && tsx examples/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "helper": "workspace:^"
+  }
+}

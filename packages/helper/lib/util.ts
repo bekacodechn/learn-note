@@ -6,9 +6,16 @@ export const delay = (time: number, value?: any) => {
   });
 };
 
-export const logTime = async (cb, name?: string) => {
-  if (typeof cb !== "function") throw new TypeError("not function");
-  name = name || "time => ";
+export const logTime = async (name: string | Function, cb?: Function) => {
+  if (typeof name === 'string') {
+    name = name || 'time =>'
+  } else if (typeof name === 'function')  {
+    cb = name;
+    name = 'time =>'
+  }
+  if (typeof name !== 'string' || typeof cb !== 'function') {
+    throw new Error('参数错误')
+  }
 
   console.time(name);
   const result = await cb();

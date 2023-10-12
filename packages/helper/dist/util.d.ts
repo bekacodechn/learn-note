@@ -1,2 +1,2 @@
 export declare const delay: (time: number, value?: any) => Promise<unknown>;
-export declare const logTime: (cb: any, name?: string) => Promise<any>;
+export declare const logTime: (name: string | Function, cb?: Function) => Promise<any>;
