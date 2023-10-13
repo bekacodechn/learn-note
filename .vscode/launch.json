@@ -7,7 +7,7 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "启动程序",
+      "name": "调试当前文件",
       "runtimeExecutable": "tsx",
       "skipFiles": [
         "<node_internals>/**"

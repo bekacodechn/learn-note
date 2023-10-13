@@ -1,0 +1,20 @@
+{
+  "name": "mini-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "node examples/index.js",
+		"run-bundle": "node examples/dist/bundle.js",
+		"test": "yarn run build && yarn run run-bundle"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "ejs": "^3.1.9",
+    "tapable": "^2.2.1"
+  }
+}

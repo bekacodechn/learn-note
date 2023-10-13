@@ -47,3 +47,11 @@ deferred promise. 将`promise`、`resolve`、`reject`挂在同一个对象并返
 小优化：在构建依赖图时避免了重复收集依赖。
 
 原项目：[minipack-explain](https://github.com/chinanf-boy/minipack-explain/tree/master) 有更详细的注释
+
+## 9. mini-webpack
+1. 相比`minipack`多实现了`loader`和`plugin`，构建依赖等核心代码基本相同。
+2. `loader`的调用发生在将`module`转为`ast`之前，是`source => source`的过程（均为字符串）。
+3. `plugin`的机制本质上是观察者模式，每个`plugin`都是一个类，并提供`apply`方法，插件开发者在这个方法内订阅若干事件（声明周期）。在`webpack`初始化`compiler`后立即遍历
+`plugins`并调用`apply`。用到了`tapable`库，该库提供插件的多种运行模式。
+
+原项目：[mini-webpack](https://github.com/cuixiaorui/mini-webpack)
