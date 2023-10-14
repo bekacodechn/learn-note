@@ -2,9 +2,10 @@
 **package**下为所有练手项目，搭配`examples`示例，可直接运行。
 
 ## todo
-1. `helper`即其他包使用`esm`
-2. `package.json`统一添加测试指令
+1. 所有包统一使用`esm`
+2. 每个包的`package.json`添加测试指令
 3. 添加`linter`
+4. 文章分类
 
 ### 1. queue
 先进先出单项链表，支持压栈、出栈、迭代和获取长度。
@@ -55,3 +56,15 @@ deferred promise. 将`promise`、`resolve`、`reject`挂在同一个对象并返
 `plugins`并调用`apply`。用到了`tapable`库，该库提供插件的多种运行模式。
 
 原项目：[mini-webpack](https://github.com/cuixiaorui/mini-webpack)
+
+## 10. tapable
+`webpack`使用的插件管理机制。 在`examples`提供了各种`hook`的运行示例。`tapable`里的各种`tap`是通过`new Function`形式动态生成的，看一下就行，平常写代码不会这样写。
+
+原项目: [tapable](https://github.com/webpack/tapable)
+
+参考文章：[【中级/高级前端】为什么我建议你一定要读一读 Tapable 源码？](https://juejin.cn/post/7164175171358556173)
+
+## 11. koa-compose
+`koa`洋葱模型。
+
+原项目: [koa-compose](https://www.npmjs.com/package/koa-compose)

@@ -19,6 +19,15 @@ importers:
         specifier: ^20.8.4
         version: 20.8.4
 
+  enhanced-resolve:
+    dependencies:
+      enhanced-resolve:
+        specifier: ^5.15.0
+        version: 5.15.0
+      p-limit:
+        specifier: ^4.0.0
+        version: 4.0.0
+
   package/queue:
     dependencies:
       link-q:
@@ -73,6 +82,32 @@ importers:
         specifier: ^7.23.2
         version: 7.23.2(@babel/core@7.23.2)
 
+  packages/09. mini-webpack:
+    dependencies:
+      '@babel/core':
+        specifier: ^7.23.2
+        version: 7.23.2
+      '@babel/preset-env':
+        specifier: ^7.23.2
+        version: 7.23.2(@babel/core@7.23.2)
+      ejs:
+        specifier: ^3.1.9
+        version: 3.1.9
+      tapable:
+        specifier: ^2.2.1
+        version: 2.2.1
+
+  packages/10. tapable:
+    dependencies:
+      helper:
+        specifier: workspace:^
+        version: link:../helper
+      tapable:
+        specifier: ^2.2.1
+        version: 2.2.1
+
+  packages/11. koa-compose: {}
+
   packages/5. p-settle:
     dependencies:
       helper:
@@ -85,6 +120,8 @@ importers:
         specifier: ^3.1.0
         version: 3.1.0
 
+  packages/a: {}
+
   packages/delay:
     dependencies:
       helper:
@@ -93,7 +130,20 @@ importers:
 
   packages/dot-prop: {}
 
-  packages/helper: {}
+  packages/helper:
+    dependencies:
+      chalk:
+        specifier: ^5.3.0
+        version: 5.3.0
+      ts-add-js-extension:
+        specifier: ^1.5.8
+        version: 1.5.8
+
+  packages/koa-compose:
+    dependencies:
+      koa-compose:
+        specifier: ^4.1.0
+        version: 4.1.0
 
   packages/l:
     dependencies:
@@ -1460,6 +1510,11 @@ packages:
       supports-color: 7.2.0
     dev: false
 
+  /chalk@5.3.0:
+    resolution: {integrity: sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
+    dev: false
+
   /color-convert@1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
     dependencies:
@@ -1524,6 +1579,14 @@ packages:
     resolution: {integrity: sha512-/Ng/W/kFv7wdEHYzxdK7Cv0BHEGSkSB3M0Ssl8Ndr1eMiYeas/+Mv4cNaDqamqWx6nd2uQZfPz6g25z25M/sdw==}
     dev: false
 
+  /enhanced-resolve@5.15.0:
+    resolution: {integrity: sha512-LXYT42KJ7lpIKECr2mAXIaMldcNCh/7E0KBKOu4KSfkHmP+mZmSs+8V5gBAqisWBy0OO4W5Oyys0GO1Y8KtdKg==}
+    engines: {node: '>=10.13.0'}
+    dependencies:
+      graceful-fs: 4.2.11
+      tapable: 2.2.1
+    dev: false
+
   /escalade@3.1.1:
     resolution: {integrity: sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==}
     engines: {node: '>=6'}
@@ -1553,6 +1616,10 @@ packages:
   /globals@11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
     engines: {node: '>=4'}
+    dev: false
+
+  /graceful-fs@4.2.11:
+    resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
     dev: false
 
   /has-flag@3.0.0:
@@ -1606,6 +1673,10 @@ packages:
     resolution: {integrity: sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==}
     engines: {node: '>=6'}
     hasBin: true
+    dev: false
+
+  /koa-compose@4.1.0:
+    resolution: {integrity: sha512-8ODW8TrDuMYvXRwra/Kh7/rJo9BtOfPc6qO8eAfC80CnCvSjSl0bkRM24X6/XBBEyj0v1nRUQ1LyOy3dbqOWXw==}
     dev: false
 
   /link-q@1.0.0:
@@ -1744,6 +1815,19 @@ packages:
   /to-fast-properties@2.0.0:
     resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
     engines: {node: '>=4'}
+    dev: false
+
+  /ts-add-js-extension@1.5.8:
+    resolution: {integrity: sha512-6k8xb7olGhFZh23LS6ND/glurraDOvt3N08jQzGnEhW5izQijeZgaTBhRtk0s39TwsOy05AGxsyAiKoWS8AbgQ==}
+    hasBin: true
+    dependencies:
+      typescript: 5.2.2
+    dev: false
+
+  /typescript@5.2.2:
+    resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
+    engines: {node: '>=14.17'}
+    hasBin: true
     dev: false
 
   /undici-types@5.25.3:

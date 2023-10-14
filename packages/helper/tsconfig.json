@@ -4,6 +4,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "dist",
-    "declaration": true
+    "declaration": true,
+		"module": "ES2020"
   }
 }

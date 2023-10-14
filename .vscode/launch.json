@@ -12,6 +12,9 @@
       "skipFiles": [
         "<node_internals>/**"
       ],
+			"runtimeArgs": [
+				"--preserve-symlinks"
+			],
       "program": "${file}",
       "outFiles": [
         "${workspaceFolder}/**/*.js"

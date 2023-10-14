@@ -4,10 +4,15 @@
   "description": "",
   "exports": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+		"build": "tsc && ts-add-js-extension --dir=dist"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "ts-add-js-extension": "^1.5.8"
+  }
 }
