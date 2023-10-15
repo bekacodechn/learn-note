@@ -68,3 +68,6 @@ deferred promise. 将`promise`、`resolve`、`reject`挂在同一个对象并返
 `koa`洋葱模型。
 
 原项目: [koa-compose](https://www.npmjs.com/package/koa-compose)
+
+## 12. interesting-program
+有趣的代码片段/功能
