@@ -70,4 +70,16 @@ deferred promise. 将`promise`、`resolve`、`reject`挂在同一个对象并返
 原项目: [koa-compose](https://www.npmjs.com/package/koa-compose)
 
 ## 12. interesting-program
-有趣的代码片段/功能
+收集有趣的代码片段/功能
+
+## 13. dot-prop
+todo.
+
+## 14. webpack
+持续更新
+
+## 15. lru-cache
+模仿`quick-lru`写的简单`lru`工具，去除了`双map`、`maxAge`。`双map`方案借鉴了[hashlru](https://github.com/dominictarr/hashlru#algorithm)，是为了解决`delete obj[prop]`慢的问题。
+
+原项目: [quick-lru](https://github.com/sindresorhus/quick-lru#readme)
+

@@ -108,6 +108,10 @@ importers:
 
   packages/11. koa-compose: {}
 
+  packages/12. interesting-program: {}
+
+  packages/13. dot-prop: {}
+
   packages/5. p-settle:
     dependencies:
       helper:
@@ -206,6 +210,8 @@ importers:
       p-reflect:
         specifier: ^3.1.0
         version: 3.1.0
+
+  packages/quick-lru: {}
 
 packages:
 
