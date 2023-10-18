@@ -83,3 +83,10 @@ todo.
 
 原项目: [quick-lru](https://github.com/sindresorhus/quick-lru#readme)
 
+## 16. glob-to-regexp
+简版`glob`。 将`*`等通配符转为正则表达式，识别`*`、`?`、`{}`和`[]`，代码100来行，但很精彩。
+1. `for`循环 + `switch` + `while`循环逐字解析字符串，并转为正则字符串。
+2. `switch`里的`break`放在`if`里,不符合要求时穿透下面的`case`，在最后的`case`里统一处理之前的内容。
+3. 可以作为学习`dot-prop`铺垫。
+
+原项目: [glob-to-regexp](https://github.com/fitzgen/glob-to-regexp/tree/master)
